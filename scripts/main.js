@@ -72,3 +72,74 @@ const departments = {
 }
 
 console.log(departments);
+const userInput = prompt('Hoi! Hoe heet je?');
+
+console.log(userInput);
+
+const userInput2 = prompt(`Hallo ${userInput} over welke afdeling will je meer weten? 1 customer-service 2 sales 3 marketing`);
+switch (userInput2) {
+    case "1": // customer-service
+        const userInput4 = prompt(`welke functie will je meer weten 1 Marketingmanager 2 Digital Marketing Specialist 3 Contentmarketeer 4 Branding Agent 5 Marktonderzoeksanalist`);
+        switch (userInput4) {
+            case "1":
+                window.location.href = "../assets/pages/marketing/Marketingmanager.html";
+                break;
+            case "2":
+                window.location.href = "../assets/pages/marketing/Digital Marketing Specialist.html";
+                break;
+            case "3":
+                window.location.href = "../assets/pages/marketing/Contentmarketeer.html";
+                break;
+            case "4":
+                window.location.href = "../assets/pages/marketing/Branding Agent.html";
+                break;
+            case "5":
+                window.location.href = "../assets/pages/marketing/Marktonderzoeksanalist.html";
+                break;
+            default:
+                break;
+        }
+        break;
+    case "2": // sales
+        const userInput5 = prompt('welke functie will je meer weten 1 Sales Representative 2 Verkoopmanager 3 Accountmanager 4 Business Development Manager');
+        switch (userInput5) {
+            case "1":
+                window.location.href = "../assets/pages/page sales/Sales Representative.html";
+                break;
+            case "2":
+                window.location.href = "../assets/pages/page sales/Verkoopmanager.html";
+                break;
+            case "3":
+                window.location.href = "../assets/pages/page sales/Accountmanager.html";
+                break;
+            case "4":
+                window.location.href = "../assets/pages/page sales/Business Development Manager.html";
+                break;
+            default:
+                break;
+        }
+        break;
+    case "3": // marketing
+        const userInput6 = prompt('welke functie will je meer weten 1 Klantenservicemedewerker 2 Klantenondersteuningsspecialist 3 Client Success Manager 4 Customer Experience Manager');
+        switch (userInput6) {
+            case "1":
+                window.location.href = "../assets/pages/customer-service/Klantenservicemedewerker.html";
+                break;
+            case "2":
+                window.location.href = "../assets/pages/customer-service/Klantenondersteuningsspecialist.html";
+                break;
+            case "3":
+                window.location.href = "../assets/pages/customer-service/Client Success Manager.html";
+                break;
+            case "4":
+                window.location.href = "../assets/pages/customer-service/Customer Experience Manager.html";
+                break;
+            default:
+                break;
+        }
+        break;
+    default:
+        break;
+}
+
+
